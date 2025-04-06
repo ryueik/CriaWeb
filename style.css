@@ -119,6 +119,8 @@ body[data-theme="dark"] #theme-icon {
     transform: rotate(180deg); /* Ícone virado no tema escuro */
 }
 
+
+
 /* Formulário futurista */
 form {
     display: flex;
@@ -231,12 +233,13 @@ footer .social a:hover {
 
 /* Seção de Contato */
 #contact {
-    background-color: var(--fundo-claro);
-    color: var(--texto-claro);
+    background: linear-gradient(135deg, var(--azul-escuro), var(--preto));
+    color: var(--branco);
     text-align: center;
     padding: 60px 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 #contact h2 {
     font-size: 2.5rem;
@@ -551,5 +554,79 @@ hr{       border: 0; /* Remove a borda padrão */
     .passo p {
       font-size: 0.95rem;
     }
+  }
+  
+  /* Estilo igual ao header (hero) */
+.hero-contato {
+    background: linear-gradient(135deg, var(--azul-escuro), var(--preto));
+    color: var(--branco);
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero-contato h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-contato p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Botões com mesmo estilo do hero */
+  .hero-contato .btn-primary {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin: 0 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-contato .btn-primary:hover {
+    background-color: var(--vermelho);
+  }
+  
+  @media (max-width: 768px) {
+    .hero-contato h2 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-contato p {
+      font-size: 1rem;
+    }
+  
+    .hero-contato .btn-primary {
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+    }
+}
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Se quiser personalizar apenas os <p> */
+  p {
+    transition: color 0.3s ease;
+  }
+  
+  body.dark-mode p {
+    color: #ddd;
   }
   
