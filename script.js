@@ -1,22 +1,17 @@
  // Função para alternar o tema
- const themeToggleButton = document.getElementById('theme-toggle');
- themeToggleButton.addEventListener('click', () => {
-     const body = document.body;
-     const currentTheme = body.getAttribute('data-theme');
-     
-     if (currentTheme === 'dark') {
-         body.setAttribute('data-theme', 'light');
-         themeToggleButton.textContent = '🌙';  // Ícone para tema claro
-     } else {
-         body.setAttribute('data-theme', 'dark');
-         themeToggleButton.textContent = '☀️';  // Ícone para tema escuro
-     }
- });
- 
+ const toggleBtn = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
 
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 
-
-
+  // Mudar ícone do botão
+  if (document.body.classList.contains('dark-mode')) {
+    themeIcon.textContent = '☀️';
+  } else {
+    themeIcon.textContent = '🌙';
+  }
+});
 
 // Função para adicionar mensagens no chat
 function addMessage(message, sender) {
