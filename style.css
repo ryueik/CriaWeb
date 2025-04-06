@@ -479,3 +479,77 @@ hr{       border: 0; /* Remove a borda padrão */
         }
     }
     
+    /* ... seu código anterior ... */
+
+/* Container responsivo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Responsividade geral */
+  @media (max-width: 768px) {
+    #hero {
+      padding: 80px 20px;
+    }
+  
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    #hero p {
+      font-size: 1.1rem;
+    }
+  
+    .portfolio-gallery,
+    .contato-opcoes,
+    .processo,
+    .contact-options {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .portfolio-item,
+    .passo,
+    .btn-contato,
+    .btn-contact {
+      width: 100% !important;
+    }
+  
+    form {
+      padding: 0 10px;
+    }
+  
+    .btn-contact,
+    .btn-contato {
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+  
+    footer .social a {
+      margin: 0 10px;
+    }
+  
+    .logo img {
+      width: 120px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .passo h3 {
+      font-size: 1.3rem;
+    }
+  
+    .passo p {
+      font-size: 0.95rem;
+    }
+  }
+  
