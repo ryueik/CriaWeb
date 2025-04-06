@@ -61,7 +61,7 @@ body[data-theme="dark"] {
 
 #hero h1:hover {
     transform: translateY(-10px);
-    color: var(--dourado); /* Mudando a cor do título no hover */
+    color: darkgoldenrod; /* Mudando a cor do título no hover */
 }
 
 #hero p {
@@ -72,7 +72,7 @@ body[data-theme="dark"] {
 
 /* Botões Futuristas */
 .btn-primary {
-    background-color: var(--dourado);
+    background-color: darkgoldenrod;
     color: var(--preto);
     padding: 15px 30px;
     font-weight: 600;
@@ -119,6 +119,8 @@ body[data-theme="dark"] #theme-icon {
     transform: rotate(180deg); /* Ícone virado no tema escuro */
 }
 
+
+
 /* Formulário futurista */
 form {
     display: flex;
@@ -140,12 +142,12 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: var(--dourado);
-    box-shadow: 0 0 10px var(--dourado);
+    border-color: darkgoldenrod;
+    box-shadow: 0 0 10px darkgoldenrod;
 }
 
 button {
-    background-color: var(--dourado);
+    background-color: darkgoldenrod;
     color: var(--preto);
     padding: 15px 30px;
     border: none;
@@ -183,7 +185,7 @@ footer .social a {
 }
 
 footer .social a:hover {
-    color: var(--dourado);
+    color: darkgoldenrod;
 }
 
 /* Logo no Header */
@@ -204,82 +206,7 @@ footer .social a:hover {
     transform: scale(1.1); /* Aumenta a logo levemente ao passar o mouse */
 }
 
-/* Estilo do botão de Assistente 24h */
-.assistente {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
 
-.btn-assistente {
-    background-color: var(escuro--azul-);
-    color: var(--branco);
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-assistente:hover {
-    background-color: var(--dourado);
-    transform: scale(1.05);
-}
-
-.btn-assistente:active {
-    transform: scale(1);
-}
-
-/* Estilo da Janela do Chat */
-.chat-container {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 300px;
-    background-color: var(--fundo-claro);
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: none; /* Escondido por padrão */
-    flex-direction: column;
-    padding: 10px;
-}
-
-.chat-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.chat-header h3 {
-    font-size: 1.2rem;
-}
-
-#fechar-chat {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: var(--azul-escuro);
-    cursor: pointer;
-}
-
-.chat-box {
-    margin: 15px 0;
-    height: 200px;
-    overflow-y: auto;
-    border: 1px solid var(--cinza);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.chat-box p {
-    margin: 10px 0;
-    padding: 5px;
-    background-color: var(--azul-escuro);
-    color: var(--branco);
-    border-radius: 5px;
-}
 
 #user-input {
     width: calc(100% - 20px);
@@ -290,7 +217,7 @@ footer .social a:hover {
 }
 
 #enviar-msg {
-    background-color: var(--dourado);
+    background-color: darkgoldenrod;
     color: var(--preto);
     padding: 10px;
     border: none;
@@ -306,12 +233,13 @@ footer .social a:hover {
 
 /* Seção de Contato */
 #contact {
-    background-color: var(--fundo-claro);
-    color: var(--texto-claro);
+    background: linear-gradient(135deg, var(--azul-escuro), var(--preto));
+    color: var(--branco);
     text-align: center;
     padding: 60px 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 #contact h2 {
     font-size: 2.5rem;
@@ -333,7 +261,7 @@ footer .social a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dourado);
+    background-color: darkgoldenrod;
     color: var(--preto);
     padding: 15px 30px;
     border-radius: 50px;
@@ -381,7 +309,7 @@ footer .social a:hover {
 
 /* Botões de contato */
 .btn-contato {
-    background-color: var(--dourado);
+    background-color: darkgoldenrod;
     color: var(--preto);
     padding: 15px 30px;
     font-weight: 600;
@@ -420,3 +348,285 @@ footer .social a:hover {
 .btn-contato.whatsapp:hover {
     background-color: #128c7e; /* Verde escuro do WhatsApp */
 }
+
+/* Estilos gerais */
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+/* Modo escuro */
+@media (prefers-color-scheme: dark) {
+    .portfolio-description {
+        color: #ccc; /* Altera a cor da descrição no modo escuro */
+    }
+
+    .container {
+        background-color: #333; /* Fundo escuro para a seção */
+    }
+
+    h2, p {
+        color: #fff; /* Títulos e parágrafos com texto claro */
+    }
+
+    .portfolio-item {
+        background-color: #444; /* Fundo claro para os itens do portfólio no modo escuro */
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+
+hr{       border: 0; /* Remove a borda padrão */
+        border-top: 5px solid darkgoldenrod; /* Define a espessura e a cor da linha */
+       
+        width: 100%; /* Faz a linha ocupar toda a largura disponível */
+    }
+    
+    #sobre {
+    --texto-escuro: #fff;
+        background: linear-gradient(135deg, #003366 , #888 ,darkgoldenrod ); /* Degradê suave para um visual moderno */
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+    
+    .processo {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    
+    .passo {
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+        padding: 20px;
+        border-radius: 10px;
+        flex-basis: 22%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: left;
+    }
+    
+    .passo:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Efeito de levitação */
+    }
+    
+    .passo h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+    .passo p {
+        font-size: 1rem;
+        color: #ddd;
+    }
+    
+    @media (max-width: 768px) {
+        .processo {
+            flex-direction: column;
+        }
+    
+        .passo {
+            margin-bottom: 20px;
+        }
+    }
+    
+    /* ... seu código anterior ... */
+
+/* Container responsivo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Responsividade geral */
+  @media (max-width: 768px) {
+    #hero {
+      padding: 80px 20px;
+    }
+  
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    #hero p {
+      font-size: 1.1rem;
+    }
+  
+    .portfolio-gallery,
+    .contato-opcoes,
+    .processo,
+    .contact-options {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .portfolio-item,
+    .passo,
+    .btn-contato,
+    .btn-contact {
+      width: 100% !important;
+    }
+  
+    form {
+      padding: 0 10px;
+    }
+  
+    .btn-contact,
+    .btn-contato {
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+  
+    footer .social a {
+      margin: 0 10px;
+    }
+  
+    .logo img {
+      width: 120px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .passo h3 {
+      font-size: 1.3rem;
+    }
+  
+    .passo p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Estilo igual ao header (hero) */
+.hero-contato {
+    background: linear-gradient(135deg, var(--azul-escuro), var(--preto));
+    color: var(--branco);
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero-contato h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-contato p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Botões com mesmo estilo do hero */
+  .hero-contato .btn-primary {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin: 0 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-contato .btn-primary:hover {
+    background-color: var(--vermelho);
+  }
+  
+  @media (max-width: 768px) {
+    .hero-contato h2 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-contato p {
+      font-size: 1rem;
+    }
+  
+    .hero-contato .btn-primary {
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+    }
+}
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Se quiser personalizar apenas os <p> */
+  p {
+    transition: color 0.3s ease;
+  }
+  
+  body.dark-mode p {
+    color: #ddd;
+  }
+  
